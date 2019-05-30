@@ -25,6 +25,7 @@ public class Config {
     public ActiveMQConnectionFactory activeMQConnectionFactory(){
         ActiveMQConnectionFactory factory = new ActiveMQConnectionFactory();
         factory.setBrokerURL(brokerUrl);
+        factory.setTrustAllPackages(true);
         return factory;
     }
 
